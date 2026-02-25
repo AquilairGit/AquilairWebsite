@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Bloquer les pages sans valeur SEO
+Disallow: /contact-success
+Disallow: /*.json$
+
+# Sitemap
+Sitemap: https://aquilair.fr/sitemap.xml

@@ -1,41 +1,68 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO -->
-  <title>Aquilair | Inspection & Thermographie par Drone — Île-de-France</title>
-  <meta name="description" content="Inspection technique et thermographie aérienne par drone pour bâtiments et infrastructures en Île-de-France. Agréé DGAC. Rapport sous 5 jours. Devis sous 24h.">
+  <!-- ═══════════════════════════════════════════════════════
+       SEO FONDAMENTAUX
+       Titre : mot-clé principal + localisation + marque (max 60 car.)
+  ════════════════════════════════════════════════════════ -->
+  <title>Inspection Drone Île-de-France | Thermographie Bâtiment — Aquilair</title>
+
+  <!-- Meta description max 155 car. — contient les 3 mots-clés prioritaires + géo + CTA -->
+  <meta name="description" content="Aquilair, spécialiste inspection par drone et thermographie bâtiment en Île-de-France. Toiture, façade, panneaux solaires. Agréé DGAC. Devis gratuit sous 24h.">
+
+  <!-- Indexation -->
+  <meta name="robots"    content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="author"    content="Aquilair">
+
+  <!-- Canonical -->
   <link rel="canonical" href="https://aquilair.fr/">
 
-  <!-- Open Graph -->
-  <meta property="og:title"       content="Aquilair | Inspection & Thermographie par Drone">
-  <meta property="og:description" content="Inspection aérienne et thermographie par drone pour bâtiments et infrastructures. Agréé DGAC. Île-de-France.">
-  <meta property="og:image"       content="https://aquilair.fr/assets/ressources/images/image-preview.jpg">
-  <meta property="og:url"         content="https://aquilair.fr/">
-  <meta property="og:type"        content="website">
-  <meta property="og:locale"      content="fr_FR">
-  <meta property="og:site_name"   content="Aquilair">
+  <!-- ── OPEN GRAPH ──────────────────────────────────────── -->
+  <meta property="og:type"         content="website">
+  <meta property="og:locale"       content="fr_FR">
+  <meta property="og:site_name"    content="Aquilair">
+  <meta property="og:url"          content="https://aquilair.fr/">
+  <meta property="og:title"        content="Inspection Drone & Thermographie Bâtiment — Aquilair Île-de-France">
+  <meta property="og:description"  content="Spécialiste inspection par drone et thermographie infrarouge en Île-de-France. Toiture, façade, panneaux solaires. Agréé DGAC. Devis gratuit sous 24h.">
+  <meta property="og:image"        content="https://aquilair.fr/assets/images/og-image.jpg">
+  <meta property="og:image:width"  content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt"    content="Drone Aquilair en mission d'inspection thermique d'un bâtiment en Île-de-France">
 
-  <!-- Twitter Card -->
+  <!-- ── TWITTER CARD ────────────────────────────────────── -->
   <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="Aquilair | Inspection & Thermographie par Drone">
-  <meta name="twitter:description" content="Inspection aérienne professionnelle et thermographie par drone.">
-  <meta name="twitter:image"       content="https://aquilair.fr/assets/ressources/images/image-preview.jpg">
+  <meta name="twitter:site"        content="@AquilairDrone">
+  <meta name="twitter:title"       content="Inspection Drone & Thermographie Bâtiment — Aquilair">
+  <meta name="twitter:description" content="Inspection par drone et thermographie infrarouge en Île-de-France. Agréé DGAC. Devis gratuit sous 24h.">
+  <meta name="twitter:image"       content="https://aquilair.fr/assets/images/og-image.jpg">
+  <meta name="twitter:image:alt"   content="Drone Aquilair en mission d'inspection thermique">
 
-  <!-- Schema.org LocalBusiness -->
+  <!-- ── SCHEMA.ORG JSON-LD ─────────────────────────────── -->
+
+  <!-- 1. LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "https://aquilair.fr/#business",
     "name": "Aquilair",
-    "description": "Inspection technique et thermographie aérienne par drone pour bâtiments et infrastructures.",
+    "legalName": "Aquilair SAS",
+    "description": "Aquilair est spécialisé en inspection par drone et thermographie aérienne pour bâtiments, toitures et panneaux photovoltaïques en Île-de-France. Pilotes certifiés DGAC.",
     "url": "https://aquilair.fr",
+    "logo": "https://aquilair.fr/assets/images/logo.png",
+    "image": "https://aquilair.fr/assets/images/og-image.jpg",
     "telephone": "+33600000000",
     "email": "contact@aquilair.fr",
+    "foundingDate": "2020",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "À compléter",
+      "addressLocality": "Paris",
+      "postalCode": "75000",
       "addressRegion": "Île-de-France",
       "addressCountry": "FR"
     },
@@ -45,13 +72,33 @@
       "longitude": 2.3522
     },
     "areaServed": [
-      { "@type": "State", "name": "Île-de-France" },
-      { "@type": "State", "name": "Seine-et-Marne" },
-      { "@type": "State", "name": "Yvelines" },
-      { "@type": "State", "name": "Essonne" },
-      { "@type": "State", "name": "Val-d'Oise" },
-      { "@type": "State", "name": "Oise" },
-      { "@type": "State", "name": "Eure-et-Loir" }
+      { "@type": "AdministrativeArea", "name": "Paris (75)" },
+      { "@type": "AdministrativeArea", "name": "Hauts-de-Seine (92)" },
+      { "@type": "AdministrativeArea", "name": "Seine-Saint-Denis (93)" },
+      { "@type": "AdministrativeArea", "name": "Val-de-Marne (94)" },
+      { "@type": "AdministrativeArea", "name": "Seine-et-Marne (77)" },
+      { "@type": "AdministrativeArea", "name": "Yvelines (78)" },
+      { "@type": "AdministrativeArea", "name": "Essonne (91)" },
+      { "@type": "AdministrativeArea", "name": "Val-d'Oise (95)" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services d'inspection par drone",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Inspection toiture par drone" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Thermographie bâtiment par drone" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Inspection panneaux photovoltaïques par drone" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Inspection façade par drone" } }
+      ]
+    },
+    "priceRange": "€€",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
     ],
     "sameAs": [
       "https://www.linkedin.com/company/aquilair",
@@ -60,83 +107,133 @@
   }
   </script>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml"  href="/assets/ressources/images/favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/ressources/images/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/ressources/images/apple-touch-icon.png">
+  <!-- 2. FAQPage — rich snippets dans les SERPs Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Combien coûte une inspection de toiture par drone ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le prix d'une inspection de toiture par drone varie selon la superficie et la complexité. Aquilair propose des devis gratuits sous 24h. Contactez-nous pour une estimation personnalisée."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Faut-il une autorisation pour faire voler un drone en Île-de-France ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. L'Île-de-France est très réglementée (zones CTR autour des aéroports, espaces urbains denses). Aquilair est agréé DGAC et gère toutes les autorisations de vol nécessaires pour ses missions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "En quoi la thermographie par drone est-elle utile pour un bâtiment ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La thermographie drone révèle fuites thermiques, ponts froids, infiltrations d'eau et défauts d'isolation invisibles à l'œil nu. Nos rapports sont conformes à la norme EN 13187."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quel est le délai pour recevoir le rapport d'inspection drone ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aquilair livre le rapport complet sous 5 jours ouvrés : photos annotées, cartographie des anomalies, thermogrammes calibrés et recommandations priorisées."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "La thermographie drone peut-elle inspecter des panneaux solaires ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. La thermographie infrarouge identifie modules défaillants, points chauds (hot spots), cellules en court-circuit et connexions oxydées — sans interrompre la production photovoltaïque."
+        }
+      }
+    ]
+  }
+  </script>
 
-  <!-- Stylesheet -->
+  <!-- ── PERFORMANCE ─────────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="style.css" as="style">
+  <link rel="preload" href="main.js"   as="script">
+
+  <!-- Favicon & PWA -->
+  <link rel="icon" type="image/svg+xml"           href="/assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180"    href="/assets/images/apple-touch-icon.png">
+  <link rel="manifest"                             href="/manifest.webmanifest">
+  <meta name="theme-color" content="#06080B">
+
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body itemscope itemtype="https://schema.org/WebPage">
 
   <!-- ══ NAV ══════════════════════════════════════════════════ -->
-  <nav class="nav" aria-label="Navigation principale">
-    <a href="/" class="nav-logo" aria-label="Aquilair — Accueil">AQUIL<em>A</em>IR</a>
-
-    <ul class="nav-links">
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <a href="/" class="nav-logo" aria-label="Aquilair — Retour à l'accueil">AQUIL<em>A</em>IR</a>
+    <ul class="nav-links" role="list">
       <li><a href="#services">Services</a></li>
       <li><a href="#thermographie">Thermographie</a></li>
-      <li><a href="#secteurs">Secteurs</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-
-    <a href="#contact" class="nav-cta">Demander un devis</a>
+    <a href="#contact" class="nav-cta">Devis gratuit</a>
   </nav>
 
 
   <!-- ══ HERO ═════════════════════════════════════════════════ -->
-  <section class="hero" aria-label="Bannière principale">
+  <section class="hero" aria-label="Aquilair — Inspection par drone et thermographie en Île-de-France">
 
-    <!-- Video background — replace src with your own file -->
     <div class="hero-video-wrap" aria-hidden="true">
       <!--
-        PLACEHOLDER : remplace ces sources par ta vidéo.
-        Format recommandé : .mp4 (H.264) + .webm (VP9) pour compatibilité maximale.
-        Résolution : 1920x1080 minimum. Durée : 15–30s en boucle.
-        Tu peux trouver des vidéos drone gratuites sur :
-          - https://www.pexels.com/search/videos/drone/
-          - https://pixabay.com/videos/search/drone/
+        VIDEO PLACEHOLDER — remplace les sources par ta vidéo.
+        · Format : MP4 H.264, 1920×1080, <8 Mo, 15–25s en boucle
+        · Ajoute poster="assets/images/hero-poster.jpg" pour améliorer le LCP
+        · Sources gratuites : pexels.com/search/videos/drone+roof
       -->
-      <video
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto"
+      <video autoplay muted loop playsinline preload="metadata"
+        poster="assets/images/hero-poster.jpg"
         aria-hidden="true"
-      >
-        <source src="assets/ressources/video/hero-drone.webm" type="video/webm">
-        <source src="assets/ressources/video/hero-drone.mp4"  type="video/mp4">
+        title="Drone Aquilair en mission d'inspection aérienne en Île-de-France">
+        <source src="assets/video/hero-drone.mp4" type="video/mp4">
       </video>
     </div>
 
-    <div class="hero-light"    aria-hidden="true"></div>
+    <div class="hero-light"     aria-hidden="true"></div>
     <div class="hero-scanlines" aria-hidden="true"></div>
 
     <div class="hero-content">
       <p class="hero-eyebrow">Inspection aérienne professionnelle — Île-de-France</p>
 
-      <h1 class="hero-title">
+      <!-- H1 unique, contient le mot-clé principal -->
+      <h1 class="hero-title" itemprop="name">
         INSPECTION<br>
         <span class="outline">PAR <span class="blue">DRONE</span></span>
       </h1>
 
       <div class="hero-bottom">
-        <p class="hero-desc">
-          Aquilair déploie des solutions d'inspection technique et de thermographie aérienne pour vos bâtiments, toitures et infrastructures. Agréé DGAC, certifié, opérationnel sous 48h.
+        <!-- Description enrichie en mots-clés sémantiques -->
+        <p class="hero-desc" itemprop="description">
+          Aquilair réalise vos <strong>inspections par drone</strong> et <strong>thermographies de bâtiment</strong> en Île-de-France. Toitures, façades, panneaux photovoltaïques. Pilotes certifiés DGAC, rapport sous 5 jours.
         </p>
-        <div class="hero-stats">
+        <div class="hero-stats" aria-label="Chiffres clés Aquilair">
           <div class="stat">
-            <div class="stat-num" data-target="500" data-suffix="+">500+</div>
+            <div class="stat-num" data-target="500" data-suffix="+" aria-label="Plus de 500 missions réalisées">500+</div>
             <div class="stat-label">Missions réalisées</div>
           </div>
           <div class="stat">
-            <div class="stat-num" data-target="48" data-suffix="h">48h</div>
+            <div class="stat-num" data-target="48" data-suffix="h" aria-label="Intervention sous 48 heures">48h</div>
             <div class="stat-label">Délai d'intervention</div>
           </div>
           <div class="stat">
-            <div class="stat-num" data-target="100" data-suffix="%">100%</div>
+            <div class="stat-num" data-target="100" data-suffix="%" aria-label="100% agréé DGAC">100%</div>
             <div class="stat-label">Agréé DGAC</div>
           </div>
         </div>
@@ -147,28 +244,24 @@
       <span>Scroll</span>
       <div class="hero-scroll-line"></div>
     </div>
-
   </section>
 
 
   <!-- ══ TICKER ═══════════════════════════════════════════════ -->
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker-track">
-      <span class="ticker-item">INSPECTION TOITURE <span class="ticker-dot">✦</span></span>
+  <div class="ticker" role="marquee" aria-label="Services Aquilair">
+    <div class="ticker-track" aria-hidden="true">
+      <span class="ticker-item">INSPECTION TOITURE PAR DRONE <span class="ticker-dot">✦</span></span>
       <span class="ticker-item">THERMOGRAPHIE BÂTIMENT <span class="ticker-dot">✦</span></span>
       <span class="ticker-item">DIAGNOSTIC FAÇADE <span class="ticker-dot">✦</span></span>
       <span class="ticker-item">PANNEAUX PHOTOVOLTAÏQUES <span class="ticker-dot">✦</span></span>
-      <span class="ticker-item">RAPPORT TECHNIQUE CERTIFIÉ <span class="ticker-dot">✦</span></span>
-      <span class="ticker-item">AGRÉÉ DGAC <span class="ticker-dot">✦</span></span>
-      <span class="ticker-item">ÎLE-DE-FRANCE &amp; RÉGIONS LIMITROPHES <span class="ticker-dot">✦</span></span>
-      <!-- Duplicate pour boucle infinie -->
-      <span class="ticker-item">INSPECTION TOITURE <span class="ticker-dot">✦</span></span>
+      <span class="ticker-item">RAPPORT CERTIFIÉ EN 13187 <span class="ticker-dot">✦</span></span>
+      <span class="ticker-item">AGRÉÉ DGAC — ÎLE-DE-FRANCE <span class="ticker-dot">✦</span></span>
+      <span class="ticker-item">INSPECTION TOITURE PAR DRONE <span class="ticker-dot">✦</span></span>
       <span class="ticker-item">THERMOGRAPHIE BÂTIMENT <span class="ticker-dot">✦</span></span>
       <span class="ticker-item">DIAGNOSTIC FAÇADE <span class="ticker-dot">✦</span></span>
       <span class="ticker-item">PANNEAUX PHOTOVOLTAÏQUES <span class="ticker-dot">✦</span></span>
-      <span class="ticker-item">RAPPORT TECHNIQUE CERTIFIÉ <span class="ticker-dot">✦</span></span>
-      <span class="ticker-item">AGRÉÉ DGAC <span class="ticker-dot">✦</span></span>
-      <span class="ticker-item">ÎLE-DE-FRANCE &amp; RÉGIONS LIMITROPHES <span class="ticker-dot">✦</span></span>
+      <span class="ticker-item">RAPPORT CERTIFIÉ EN 13187 <span class="ticker-dot">✦</span></span>
+      <span class="ticker-item">AGRÉÉ DGAC — ÎLE-DE-FRANCE <span class="ticker-dot">✦</span></span>
     </div>
   </div>
 
@@ -177,133 +270,86 @@
   <section class="services" id="services" aria-labelledby="services-title">
     <div class="services-header">
       <div>
-        <div class="label">Nos expertises</div>
-        <h2 class="section-title" id="services-title">CE QUE<br>NOUS FAISONS</h2>
+        <div class="label" aria-hidden="true">Nos expertises</div>
+        <!-- H2 : contient les mots-clés service -->
+        <h2 class="section-title" id="services-title">NOS SERVICES<br>D'INSPECTION DRONE</h2>
       </div>
       <p class="services-intro">
-        Chaque mission est conduite par des pilotes certifiés DGAC, équipés de capteurs haute résolution et thermiques. Rapports livrables sous 5 jours ouvrés.
+        Chaque mission est conduite par des <strong>pilotes drone certifiés DGAC</strong>, équipés de capteurs haute résolution et de caméras thermiques FLIR. Interventions en Île-de-France et régions limitrophes. Rapport sous 5 jours ouvrés.
       </p>
     </div>
 
     <div class="services-grid">
 
-      <!-- 01 -->
-      <article class="service-card reveal">
-        <div class="service-num">01</div>
+      <article class="service-card reveal" itemscope itemtype="https://schema.org/Service">
+        <div class="service-num" aria-hidden="true">01</div>
         <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
           <path d="M22 4L40 14V30L22 40L4 30V14L22 4Z"/>
           <circle cx="22" cy="22" r="6"/>
-          <line x1="22" y1="16" x2="22" y2="4"/>
-          <line x1="22" y1="28" x2="22" y2="40"/>
-          <line x1="16" y1="22" x2="4" y2="22"/>
-          <line x1="28" y1="22" x2="40" y2="22"/>
+          <line x1="22" y1="16" x2="22" y2="4"/><line x1="22" y1="28" x2="22" y2="40"/>
+          <line x1="16" y1="22" x2="4" y2="22"/><line x1="28" y1="22" x2="40" y2="22"/>
         </svg>
-        <h3 class="service-name">INSPECTION TOITURE</h3>
-        <p class="service-desc">Détection de défauts, fissures, points d'eau, végétation envahissante et dégradations de membrane — sans échafaudage ni risque de chute.</p>
-        <div class="service-arrow" aria-hidden="true">
-          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.5">
-            <line x1="2" y1="11" x2="11" y2="2"/>
-            <polyline points="5,2 11,2 11,8"/>
-          </svg>
-        </div>
+        <h3 class="service-name" itemprop="name">INSPECTION TOITURE PAR DRONE</h3>
+        <p class="service-desc" itemprop="description">Détection de fissures, points d'eau, végétation et dégradations de membrane — tuiles, zinc, bitume, bac acier — sans échafaudage ni risque de chute. Résolution jusqu'à 2 cm/pixel.</p>
+        <div class="service-arrow" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="2" y1="11" x2="11" y2="2"/><polyline points="5,2 11,2 11,8"/></svg></div>
       </article>
 
-      <!-- 02 -->
-      <article class="service-card reveal">
-        <div class="service-num">02</div>
+      <article class="service-card reveal" itemscope itemtype="https://schema.org/Service">
+        <div class="service-num" aria-hidden="true">02</div>
         <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
           <rect x="6" y="6" width="32" height="32" rx="1"/>
           <path d="M6 20L14 12L22 18L30 10L38 16"/>
-          <line x1="14" y1="38" x2="14" y2="22"/>
-          <line x1="22" y1="38" x2="22" y2="28"/>
-          <line x1="30" y1="38" x2="30" y2="20"/>
+          <line x1="14" y1="38" x2="14" y2="22"/><line x1="22" y1="38" x2="22" y2="28"/><line x1="30" y1="38" x2="30" y2="20"/>
         </svg>
-        <h3 class="service-name">THERMOGRAPHIE</h3>
-        <p class="service-desc">Cartographie thermique infrarouge pour identifier fuites thermiques, ponts froids, infiltrations d'eau et dysfonctionnements d'équipements.</p>
-        <div class="service-arrow" aria-hidden="true">
-          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.5">
-            <line x1="2" y1="11" x2="11" y2="2"/>
-            <polyline points="5,2 11,2 11,8"/>
-          </svg>
-        </div>
+        <h3 class="service-name" itemprop="name">THERMOGRAPHIE BÂTIMENT PAR DRONE</h3>
+        <p class="service-desc" itemprop="description">Cartographie thermique infrarouge haute précision (±0,1°C) pour identifier fuites thermiques, ponts froids, infiltrations d'eau et défauts d'isolation. Rapport normé <strong>EN 13187 / ISO 6781</strong>.</p>
+        <div class="service-arrow" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="2" y1="11" x2="11" y2="2"/><polyline points="5,2 11,2 11,8"/></svg></div>
       </article>
 
-      <!-- 03 -->
-      <article class="service-card reveal">
-        <div class="service-num">03</div>
+      <article class="service-card reveal" itemscope itemtype="https://schema.org/Service">
+        <div class="service-num" aria-hidden="true">03</div>
         <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
           <path d="M8 36L22 8L36 36H8Z"/>
-          <line x1="22" y1="8" x2="22" y2="36"/>
-          <line x1="8" y1="24" x2="36" y2="24"/>
-          <circle cx="22" cy="8" r="3"/>
+          <line x1="22" y1="8" x2="22" y2="36"/><line x1="8" y1="24" x2="36" y2="24"/><circle cx="22" cy="8" r="3"/>
         </svg>
-        <h3 class="service-name">INSPECTION FAÇADE</h3>
-        <p class="service-desc">Analyse des revêtements extérieurs, décollements, fissures et zones de fragilité sur buildings et immeubles de grande hauteur.</p>
-        <div class="service-arrow" aria-hidden="true">
-          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.5">
-            <line x1="2" y1="11" x2="11" y2="2"/>
-            <polyline points="5,2 11,2 11,8"/>
-          </svg>
-        </div>
+        <h3 class="service-name" itemprop="name">INSPECTION FAÇADE DRONE</h3>
+        <p class="service-desc" itemprop="description">Analyse des revêtements extérieurs : décollements, fissures, zones de fragilité sur immeubles et bâtiments de grande hauteur. Alternative sûre et rapide à la nacelle élévatrice.</p>
+        <div class="service-arrow" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="2" y1="11" x2="11" y2="2"/><polyline points="5,2 11,2 11,8"/></svg></div>
       </article>
 
-      <!-- 04 -->
-      <article class="service-card reveal">
-        <div class="service-num">04</div>
+      <article class="service-card reveal" itemscope itemtype="https://schema.org/Service">
+        <div class="service-num" aria-hidden="true">04</div>
         <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-          <circle cx="22" cy="22" r="16"/>
-          <circle cx="22" cy="22" r="8"/>
-          <circle cx="22" cy="22" r="2" fill="currentColor"/>
-          <line x1="22" y1="6" x2="22" y2="14"/>
-          <line x1="22" y1="30" x2="22" y2="38"/>
-          <line x1="6" y1="22" x2="14" y2="22"/>
-          <line x1="30" y1="22" x2="38" y2="22"/>
+          <circle cx="22" cy="22" r="16"/><circle cx="22" cy="22" r="8"/><circle cx="22" cy="22" r="2" fill="currentColor"/>
+          <line x1="22" y1="6" x2="22" y2="14"/><line x1="22" y1="30" x2="22" y2="38"/>
+          <line x1="6" y1="22" x2="14" y2="22"/><line x1="30" y1="22" x2="38" y2="22"/>
         </svg>
-        <h3 class="service-name">PHOTOVOLTAÏQUE</h3>
-        <p class="service-desc">Contrôle thermique de centrales solaires et panneaux en toiture. Identification précise des modules défaillants et points chauds.</p>
-        <div class="service-arrow" aria-hidden="true">
-          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.5">
-            <line x1="2" y1="11" x2="11" y2="2"/>
-            <polyline points="5,2 11,2 11,8"/>
-          </svg>
-        </div>
+        <h3 class="service-name" itemprop="name">INSPECTION PANNEAUX SOLAIRES DRONE</h3>
+        <p class="service-desc" itemprop="description">Contrôle thermique de centrales photovoltaïques et installations solaires en toiture. Détection des modules défaillants, <strong>points chauds (hot spots)</strong> et connexions oxydées — sans arrêt de production.</p>
+        <div class="service-arrow" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="2" y1="11" x2="11" y2="2"/><polyline points="5,2 11,2 11,8"/></svg></div>
       </article>
 
-      <!-- 05 -->
-      <article class="service-card reveal">
-        <div class="service-num">05</div>
+      <article class="service-card reveal" itemscope itemtype="https://schema.org/Service">
+        <div class="service-num" aria-hidden="true">05</div>
         <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
           <rect x="6" y="14" width="32" height="20" rx="1"/>
           <path d="M14 14V10H30V14"/>
-          <line x1="6" y1="24" x2="38" y2="24"/>
-          <circle cx="16" cy="19" r="2"/>
-          <circle cx="28" cy="29" r="2"/>
+          <line x1="6" y1="24" x2="38" y2="24"/><circle cx="16" cy="19" r="2"/><circle cx="28" cy="29" r="2"/>
         </svg>
-        <h3 class="service-name">INFRASTRUCTURE</h3>
-        <p class="service-desc">Inspection d'ouvrages d'art, pylônes, antennes, ponts et zones difficiles d'accès. Drone configuré pour missions complexes.</p>
-        <div class="service-arrow" aria-hidden="true">
-          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.5">
-            <line x1="2" y1="11" x2="11" y2="2"/>
-            <polyline points="5,2 11,2 11,8"/>
-          </svg>
-        </div>
+        <h3 class="service-name" itemprop="name">INSPECTION INFRASTRUCTURE DRONE</h3>
+        <p class="service-desc" itemprop="description">Inspection d'ouvrages d'art, ponts, pylônes, antennes et zones difficiles d'accès en Île-de-France. Missions sous autorisation DGAC, adaptées aux environnements urbains contraints.</p>
+        <div class="service-arrow" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="2" y1="11" x2="11" y2="2"/><polyline points="5,2 11,2 11,8"/></svg></div>
       </article>
 
-      <!-- 06 -->
-      <article class="service-card reveal">
-        <div class="service-num">06</div>
+      <article class="service-card reveal" itemscope itemtype="https://schema.org/Service">
+        <div class="service-num" aria-hidden="true">06</div>
         <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
           <path d="M10 34L4 22L10 10H34L40 22L34 34H10Z"/>
           <polyline points="16,22 20,26 28,18"/>
         </svg>
-        <h3 class="service-name">RAPPORT CERTIFIÉ</h3>
-        <p class="service-desc">Livrable complet sous 5 jours : rapport technique illustré, cartographie annotée, recommandations hiérarchisées et données en haute résolution.</p>
-        <div class="service-arrow" aria-hidden="true">
-          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.5">
-            <line x1="2" y1="11" x2="11" y2="2"/>
-            <polyline points="5,2 11,2 11,8"/>
-          </svg>
-        </div>
+        <h3 class="service-name" itemprop="name">RAPPORT D'INSPECTION CERTIFIÉ</h3>
+        <p class="service-desc" itemprop="description">Livrable professionnel sous 5 jours : rapport PDF illustré, cartographie annotée avec localisation GPS des anomalies, thermogrammes calibrés et recommandations d'intervention priorisées.</p>
+        <div class="service-arrow" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="2" y1="11" x2="11" y2="2"/><polyline points="5,2 11,2 11,8"/></svg></div>
       </article>
 
     </div>
@@ -314,55 +360,53 @@
   <section class="thermo" id="thermographie" aria-labelledby="thermo-title">
     <div class="thermo-layout">
 
-      <!-- Visual / IR placeholder -->
-      <div class="thermo-visual reveal" aria-label="Image thermographique infrarouge simulée">
-        <div class="thermo-ir"       aria-hidden="true"></div>
-        <div class="thermo-fade"     aria-hidden="true"></div>
-        <div class="thermo-badge"    aria-hidden="true">Caméra FLIR · IR</div>
-        <div class="thermo-scale"    aria-hidden="true"></div>
+      <div class="thermo-visual reveal" role="img" aria-label="Thermogramme infrarouge d'une toiture montrant une anomalie thermique à 84°C détectée par drone">
+        <div class="thermo-ir"    aria-hidden="true"></div>
+        <div class="thermo-fade"  aria-hidden="true"></div>
+        <div class="thermo-badge" aria-hidden="true">Caméra FLIR · IR</div>
+        <div class="thermo-scale" aria-hidden="true"></div>
         <div class="thermo-reading">
           <div class="reading-val">+84°C</div>
           <div class="reading-label">Anomalie détectée</div>
         </div>
       </div>
 
-      <!-- Content -->
       <div class="thermo-content">
-        <div class="label">Technologie infrarouge</div>
+        <div class="label" aria-hidden="true">Technologie infrarouge</div>
         <h2 class="section-title" id="thermo-title">
-          VOIR CE QUE<br>L'ŒIL <span style="color:var(--blue-bright)">NE VOIT PAS</span>
+          THERMOGRAPHIE DRONE :<br><span style="color:var(--blue-bright)">L'INVISIBLE RENDU VISIBLE</span>
         </h2>
         <p style="color:var(--grey-2); font-size:0.93rem; line-height:1.82;">
-          Nos drones embarquent des caméras thermiques FLIR haute précision capables de détecter des écarts de température au dixième de degré. Une technologie d'ordinaire réservée à l'industrie lourde, désormais accessible à la gestion immobilière.
+          Nos drones embarquent des <strong>caméras thermiques FLIR haute précision</strong> capables de détecter des écarts de température au dixième de degré. Chaque thermogramme est géoréférencé et livré dans le rapport. Une technologie d'industrie lourde, désormais accessible à la gestion immobilière en Île-de-France.
         </p>
 
         <div class="thermo-features">
           <div class="thermo-feat reveal">
-            <span class="feat-idx">01</span>
+            <span class="feat-idx" aria-hidden="true">01</span>
             <div class="feat-body">
-              <h4>Détection de fuites thermiques</h4>
-              <p>Ponts froids, défauts d'isolation, déperditions énergétiques localisées avec précision millimétrique.</p>
+              <h4>Fuites thermiques &amp; ponts froids</h4>
+              <p>Détection de défauts d'isolation et déperditions énergétiques — utile pour les diagnostics DPE et audits énergétiques réglementaires.</p>
             </div>
           </div>
           <div class="thermo-feat reveal">
-            <span class="feat-idx">02</span>
+            <span class="feat-idx" aria-hidden="true">02</span>
             <div class="feat-body">
               <h4>Infiltrations d'eau cachées</h4>
-              <p>L'eau retient la chaleur différemment des matériaux secs — invisible à l'œil nu, flagrant en infrarouge.</p>
+              <p>L'eau stockée sous une membrane retient la chaleur différemment — invisible en lumière visible, flagrante en infrarouge.</p>
             </div>
           </div>
           <div class="thermo-feat reveal">
-            <span class="feat-idx">03</span>
+            <span class="feat-idx" aria-hidden="true">03</span>
             <div class="feat-body">
-              <h4>Surchauffe électrique & photovoltaïque</h4>
-              <p>Identification des modules défaillants et connexions oxydées avant tout incident.</p>
+              <h4>Panneaux photovoltaïques défaillants</h4>
+              <p>Repérage des modules en sous-performance, cellules en court-circuit et connexions dégradées sur vos installations solaires.</p>
             </div>
           </div>
           <div class="thermo-feat reveal">
-            <span class="feat-idx">04</span>
+            <span class="feat-idx" aria-hidden="true">04</span>
             <div class="feat-body">
-              <h4>Rapport normé EN 13187 / ISO 6781</h4>
-              <p>Nos livrables thermographiques respectent les normes européennes pour vos démarches réglementaires.</p>
+              <h4>Conformité EN 13187 / ISO 6781</h4>
+              <p>Nos rapports thermographiques respectent les normes européennes, acceptés pour démarches réglementaires et contentieux assurantiels.</p>
             </div>
           </div>
         </div>
@@ -375,36 +419,34 @@
   <!-- ══ PROCESS ═══════════════════════════════════════════════ -->
   <section class="process" aria-labelledby="process-title">
     <div class="process-header">
-      <div class="label">Comment ça marche</div>
-      <h2 class="section-title" id="process-title">4 ÉTAPES,<br>UN RÉSULTAT</h2>
+      <div class="label" aria-hidden="true">Comment ça marche</div>
+      <h2 class="section-title" id="process-title">VOTRE MISSION EN<br>4 ÉTAPES</h2>
     </div>
-
     <div class="process-grid">
       <div class="process-line" aria-hidden="true"></div>
-
       <div class="step reveal">
         <div class="step-dot" aria-hidden="true"></div>
         <div class="step-idx">Étape 01</div>
         <h3 class="step-title">ANALYSE DU SITE</h3>
-        <p class="step-desc">Étude préalable, contraintes réglementaires aériennes (NOTAM, zones DGAC) et briefing technique pour définir le protocole de vol optimal.</p>
+        <p class="step-desc">Étude des contraintes aériennes DGAC en Île-de-France (NOTAM, zones CTR), briefing technique et protocole de vol adapté à votre bâtiment.</p>
       </div>
       <div class="step reveal">
         <div class="step-dot" aria-hidden="true"></div>
         <div class="step-idx">Étape 02</div>
         <h3 class="step-title">MISSION DE VOL</h3>
-        <p class="step-desc">Intervention par un pilote certifié. Acquisition systématique : photos haute résolution, vidéo 4K et cartographie thermique infrarouge.</p>
+        <p class="step-desc">Intervention par un pilote drone certifié DGAC. Acquisition en haute résolution : photos 4K, vidéo et cartographie thermique infrarouge.</p>
       </div>
       <div class="step reveal">
         <div class="step-dot" aria-hidden="true"></div>
         <div class="step-idx">Étape 03</div>
         <h3 class="step-title">TRAITEMENT DES DONNÉES</h3>
-        <p class="step-desc">Analyse en post-production, superposition des couches thermiques et visuelles, annotation et localisation GPS de chaque anomalie.</p>
+        <p class="step-desc">Analyse post-mission, superposition des couches thermiques et visuelles, annotation et géolocalisation GPS de chaque anomalie détectée.</p>
       </div>
       <div class="step reveal">
         <div class="step-dot" aria-hidden="true"></div>
         <div class="step-idx">Étape 04</div>
-        <h3 class="step-title">LIVRABLE & RAPPORT</h3>
-        <p class="step-desc">Rapport technique complet sous 5 jours ouvrés : PDF illustré, galerie annotée, cartographie et recommandations priorisées.</p>
+        <h3 class="step-title">RAPPORT &amp; LIVRABLE</h3>
+        <p class="step-desc">Rapport d'inspection complet sous 5 jours ouvrés : PDF illustré, cartographie annotée, thermogrammes et recommandations d'intervention priorisées.</p>
       </div>
     </div>
   </section>
@@ -413,49 +455,27 @@
   <!-- ══ SECTORS ════════════════════════════════════════════════ -->
   <section class="sectors" id="secteurs" aria-labelledby="sectors-title">
     <div class="sectors-header">
-      <div class="label">Clients & secteurs</div>
-      <h2 class="section-title" id="sectors-title">NOUS INTERVENONS<br>POUR VOUS</h2>
+      <div class="label" aria-hidden="true">Clients &amp; secteurs</div>
+      <h2 class="section-title" id="sectors-title">INSPECTION DRONE<br>POUR TOUS SECTEURS</h2>
     </div>
-
     <div class="sectors-grid">
       <div class="sector-card reveal">
-        <div class="sector-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="3" y="3" width="16" height="16"/>
-            <line x1="3" y1="9" x2="19" y2="9"/>
-            <line x1="9" y1="3" x2="9" y2="19"/>
-          </svg>
-        </div>
+        <div class="sector-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="16" height="16"/><line x1="3" y1="9" x2="19" y2="9"/><line x1="9" y1="3" x2="9" y2="19"/></svg></div>
         <h3 class="sector-name">IMMOBILIER</h3>
         <p class="sector-sub">Bailleurs, promoteurs, syndics de copropriété, gestionnaires de patrimoine</p>
       </div>
       <div class="sector-card reveal">
-        <div class="sector-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M4 18L4 8L11 3L18 8V18H4Z"/>
-            <rect x="8" y="12" width="6" height="6"/>
-          </svg>
-        </div>
-        <h3 class="sector-name">BTP & CONSTRUCTION</h3>
-        <p class="sector-sub">Maîtres d'ouvrage, entreprises générales, bureaux de contrôle</p>
+        <div class="sector-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 18L4 8L11 3L18 8V18H4Z"/><rect x="8" y="12" width="6" height="6"/></svg></div>
+        <h3 class="sector-name">BTP &amp; CONSTRUCTION</h3>
+        <p class="sector-sub">Maîtres d'ouvrage, entreprises générales, bureaux de contrôle technique</p>
       </div>
       <div class="sector-card reveal">
-        <div class="sector-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="11" cy="11" r="8"/>
-            <path d="M11 7V11L14 14"/>
-          </svg>
-        </div>
-        <h3 class="sector-name">ÉNERGIE</h3>
-        <p class="sector-sub">Exploitants de centrales solaires, producteurs d'énergie renouvelable</p>
+        <div class="sector-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M11 7V11L14 14"/></svg></div>
+        <h3 class="sector-name">ÉNERGIE &amp; SOLAIRE</h3>
+        <p class="sector-sub">Exploitants de centrales photovoltaïques, producteurs d'énergie renouvelable</p>
       </div>
       <div class="sector-card reveal">
-        <div class="sector-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M3 19L11 3L19 19H3Z"/>
-            <line x1="11" y1="10" x2="11" y2="15"/>
-          </svg>
-        </div>
+        <div class="sector-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 19L11 3L19 19H3Z"/><line x1="11" y1="10" x2="11" y2="15"/></svg></div>
         <h3 class="sector-name">INDUSTRIE</h3>
         <p class="sector-sub">Sites industriels, entrepôts logistiques, installations classées ICPE</p>
       </div>
@@ -467,11 +487,11 @@
   <div class="cta-band">
     <div class="cta-layout">
       <div>
-        <h2 class="cta-title">PRÊT À VOIR<br>VOTRE SITE<br>AUTREMENT ?</h2>
-        <p class="cta-sub">Un devis personnalisé en moins de 24h. Intervention sous 48h en Île-de-France.</p>
+        <h2 class="cta-title">DEVIS GRATUIT<br>SOUS 24H<br>EN ÎLE-DE-FRANCE</h2>
+        <p class="cta-sub">Inspection toiture, thermographie ou contrôle photovoltaïque — intervention sous 48h après validation.</p>
       </div>
       <div class="cta-actions">
-        <a href="#contact" class="btn-white">Demander un devis</a>
+        <a href="#contact" class="btn-white">Demander un devis gratuit</a>
         <a href="tel:+33600000000" class="btn-outline-white">Nous appeler</a>
       </div>
     </div>
@@ -479,9 +499,9 @@
 
 
   <!-- ══ CERTIFICATIONS ══════════════════════════════════════════ -->
-  <div class="certs">
+  <div class="certs" aria-label="Certifications et agréments Aquilair">
     <div class="certs-row">
-      <div class="certs-label">Certifications & agréments</div>
+      <div class="certs-label">Certifications &amp; agréments</div>
       <div class="certs-sep" aria-hidden="true"></div>
       <span class="cert-tag">✓ Agréé DGAC</span>
       <span class="cert-tag">✓ Assurance RC Pro</span>
@@ -492,35 +512,87 @@
   </div>
 
 
+  <!-- ══ FAQ ═══════════════════════════════════════════════════
+       Correspond au FAQPage JSON-LD déclaré en <head>.
+       Google peut afficher ces Q/R comme rich snippets dans les SERPs.
+  ══════════════════════════════════════════════════════════ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="faq-header">
+      <div class="label" aria-hidden="true">Questions fréquentes</div>
+      <h2 class="section-title" id="faq-title">FAQ INSPECTION<br>DRONE ÎLE-DE-FRANCE</h2>
+    </div>
+
+    <div class="faq-list">
+
+      <details class="faq-item reveal">
+        <summary class="faq-question">Combien coûte une inspection de toiture par drone ?</summary>
+        <div class="faq-answer">
+          <p>Le prix d'une <strong>inspection de toiture par drone</strong> varie selon la superficie, l'accessibilité du site et le type de rapport souhaité. Aquilair propose des <strong>devis gratuits sous 24h</strong>. Contactez-nous pour une estimation personnalisée en Île-de-France.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary class="faq-question">Faut-il une autorisation pour faire voler un drone en Île-de-France ?</summary>
+        <div class="faq-answer">
+          <p>Oui. L'Île-de-France est très réglementée (zones CTR autour des aéroports de Paris, espaces urbains denses). Aquilair est <strong>agréé DGAC</strong> et prend en charge toutes les autorisations de vol nécessaires (NOTAM, déclarations préfectorales) pour chaque mission.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary class="faq-question">En quoi la thermographie par drone est-elle utile pour un bâtiment ?</summary>
+        <div class="faq-answer">
+          <p>La <strong>thermographie drone</strong> révèle des anomalies invisibles à l'œil nu : fuites thermiques, ponts froids, infiltrations d'eau et défauts d'isolation. Elle est essentielle pour les diagnostics DPE, la maintenance préventive et les contentieux assurantiels. Nos rapports sont conformes à la norme EN 13187.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary class="faq-question">Quel est le délai pour recevoir le rapport d'inspection drone ?</summary>
+        <div class="faq-answer">
+          <p>Aquilair livre le rapport complet sous <strong>5 jours ouvrés</strong> après la mission : photos annotées en haute résolution, cartographie des anomalies, thermogrammes calibrés et recommandations d'intervention priorisées.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary class="faq-question">La thermographie drone peut-elle inspecter des panneaux photovoltaïques ?</summary>
+        <div class="faq-answer">
+          <p>Oui, c'est l'une des applications les plus efficaces. La thermographie infrarouge identifie <strong>modules défaillants, points chauds (hot spots)</strong>, cellules en court-circuit et connexions oxydées — sans interrompre la production de votre installation solaire.</p>
+        </div>
+      </details>
+
+    </div>
+  </section>
+
+
   <!-- ══ CONTACT ════════════════════════════════════════════════ -->
   <section class="contact" id="contact" aria-labelledby="contact-title">
     <div class="contact-layout">
-
       <div>
-        <div class="label">Nous contacter</div>
-        <h2 class="section-title" id="contact-title">PARLONS DE<br>VOTRE PROJET</h2>
+        <div class="label" aria-hidden="true">Nous contacter</div>
+        <h2 class="section-title" id="contact-title">DEVIS GRATUIT<br>INSPECTION DRONE</h2>
         <p class="contact-lead">
-          Décrivez-nous votre besoin. Nous vous répondons sous 24h avec une proposition adaptée à vos contraintes techniques et budgétaires.
+          Décrivez votre besoin d'inspection toiture, thermographie ou contrôle photovoltaïque. Nous répondons sous <strong>24h</strong> avec une proposition adaptée.
         </p>
-        <div class="contact-detail">
-          <div class="detail-label">Téléphone</div>
-          <div class="detail-val"><a href="tel:+33600000000">+33 6 00 00 00 00</a></div>
-        </div>
-        <div class="contact-detail">
-          <div class="detail-label">Email</div>
-          <div class="detail-val"><a href="mailto:contact@aquilair.fr">contact@aquilair.fr</a></div>
-        </div>
-        <div class="contact-detail">
-          <div class="detail-label">Zone d'intervention</div>
-          <div class="detail-val">Île-de-France &amp; régions limitrophes</div>
-        </div>
-        <div class="contact-detail">
-          <div class="detail-label">Délai d'intervention</div>
-          <div class="detail-val">48h après validation du devis</div>
-        </div>
+        <address>
+          <div class="contact-detail">
+            <div class="detail-label">Téléphone</div>
+            <div class="detail-val"><a href="tel:+33600000000" rel="nofollow">+33 6 00 00 00 00</a></div>
+          </div>
+          <div class="contact-detail">
+            <div class="detail-label">Email</div>
+            <div class="detail-val"><a href="mailto:contact@aquilair.fr">contact@aquilair.fr</a></div>
+          </div>
+          <div class="contact-detail">
+            <div class="detail-label">Zone d'intervention</div>
+            <div class="detail-val">Île-de-France (75, 77, 78, 91, 92, 93, 94, 95)</div>
+          </div>
+          <div class="contact-detail">
+            <div class="detail-label">Délai d'intervention</div>
+            <div class="detail-val">48h après validation du devis</div>
+          </div>
+        </address>
       </div>
 
-      <form class="form" novalidate aria-label="Formulaire de contact">
+      <form class="form" novalidate aria-label="Formulaire de demande de devis inspection drone" method="POST" action="/contact">
         <div class="form-row">
           <div class="field">
             <label for="nom">Nom *</label>
@@ -549,82 +621,85 @@
           <label for="service">Type de mission *</label>
           <select id="service" name="service" required>
             <option value="" disabled selected>Sélectionner un service</option>
-            <option value="toiture">Inspection toiture</option>
-            <option value="thermographie">Thermographie bâtiment</option>
-            <option value="facade">Inspection façade</option>
-            <option value="pv">Contrôle photovoltaïque</option>
-            <option value="infra">Inspection infrastructure</option>
+            <option value="inspection-toiture">Inspection toiture par drone</option>
+            <option value="thermographie-batiment">Thermographie bâtiment</option>
+            <option value="inspection-facade">Inspection façade</option>
+            <option value="panneaux-photovoltaiques">Contrôle panneaux photovoltaïques</option>
+            <option value="infrastructure">Inspection infrastructure</option>
             <option value="autre">Autre</option>
           </select>
         </div>
         <div class="field">
-          <label for="message">Décrivez votre projet</label>
-          <textarea id="message" name="message" placeholder="Localisation, type de bâtiment, superficie approximative, contraintes particulières…"></textarea>
+          <label for="localisation">Département / Ville</label>
+          <input type="text" id="localisation" name="localisation" placeholder="Paris 75, Boulogne 92, Saint-Denis 93…">
         </div>
-        <button type="submit" class="form-submit">Envoyer la demande →</button>
+        <div class="field">
+          <label for="message">Décrivez votre projet</label>
+          <textarea id="message" name="message" placeholder="Type de bâtiment, superficie approximative, contraintes particulières…"></textarea>
+        </div>
+        <!-- Honeypot anti-spam (invisible) -->
+        <div style="display:none" aria-hidden="true">
+          <input type="text" name="website" tabindex="-1" autocomplete="off">
+        </div>
+        <button type="submit" class="form-submit">Demander un devis gratuit →</button>
       </form>
-
     </div>
   </section>
 
 
   <!-- ══ FOOTER ═════════════════════════════════════════════════ -->
-  <footer>
+  <footer role="contentinfo">
     <div class="footer-top">
       <div>
         <div class="footer-brand">AQUIL<em>A</em>IR</div>
-        <div class="footer-tagline">Inspection aérienne · Thermographie · Île-de-France</div>
+        <div class="footer-tagline">Inspection drone · Thermographie · Île-de-France</div>
       </div>
-      <div class="footer-cols">
+      <nav class="footer-cols" aria-label="Liens de pied de page">
         <div class="footer-col">
           <h5>Services</h5>
-          <ul>
-            <li><a href="#services">Inspection toiture</a></li>
-            <li><a href="#thermographie">Thermographie</a></li>
+          <ul role="list">
+            <li><a href="#services">Inspection toiture drone</a></li>
+            <li><a href="#thermographie">Thermographie bâtiment</a></li>
             <li><a href="#services">Inspection façade</a></li>
-            <li><a href="#services">Photovoltaïque</a></li>
+            <li><a href="#services">Panneaux solaires</a></li>
             <li><a href="#services">Infrastructure</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h5>Entreprise</h5>
-          <ul>
+          <ul role="list">
             <li><a href="#">À propos</a></li>
-            <li><a href="#">Nos certifications</a></li>
-            <li><a href="#">Réalisations</a></li>
+            <li><a href="#">Certifications DGAC</a></li>
+            <li><a href="#">Nos réalisations</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h5>Légal</h5>
-          <ul>
-            <li><a href="#">Mentions légales</a></li>
-            <li><a href="#">Politique de confidentialité</a></li>
-            <li><a href="#">CGV</a></li>
+          <ul role="list">
+            <li><a href="/mentions-legales">Mentions légales</a></li>
+            <li><a href="/confidentialite">Politique de confidentialité</a></li>
+            <li><a href="/cgv">CGV</a></li>
+            <li><a href="/sitemap.xml">Plan du site</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
     </div>
-
     <div class="footer-bottom">
       <span class="footer-copy">© 2025 Aquilair — Tous droits réservés — SIRET&nbsp;: XXX XXX XXX XXXXX</span>
       <div class="footer-social">
-        <a href="https://www.linkedin.com/company/aquilair" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
-          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-          </svg>
+        <a href="https://www.linkedin.com/company/aquilair" class="social-link" aria-label="Aquilair sur LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
         </a>
-        <a href="https://www.facebook.com/aquilair" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
-          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-          </svg>
+        <a href="https://www.facebook.com/aquilair" class="social-link" aria-label="Aquilair sur Facebook" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg>
         </a>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="main.js"></script>
+  <!-- JS en defer : non bloquant pour le rendu -->
+  <script src="main.js" defer></script>
 
 </body>
 </html>
