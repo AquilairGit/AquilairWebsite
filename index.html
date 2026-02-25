@@ -13,6 +13,9 @@
   <!-- Meta description max 155 car. — contient les 3 mots-clés prioritaires + géo + CTA -->
   <meta name="description" content="Aquilair, spécialiste inspection par drone et thermographie bâtiment en Île-de-France. Toiture, façade, panneaux solaires. Agréé DGAC. Devis gratuit sous 24h.">
 
+  <!-- Mots-clés secondaires (signal sémantique complémentaire) -->
+  <meta name="keywords" content="inspection drone île-de-france, thermographie bâtiment drone, inspection toiture drone Paris, thermographie infrarouge toiture, contrôle panneaux photovoltaïques drone, inspection façade drone, pilote drone certifié DGAC">
+
   <!-- Indexation -->
   <meta name="robots"    content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="googlebot" content="index, follow">
@@ -28,7 +31,7 @@
   <meta property="og:url"          content="https://aquilair.fr/">
   <meta property="og:title"        content="Inspection Drone & Thermographie Bâtiment — Aquilair Île-de-France">
   <meta property="og:description"  content="Spécialiste inspection par drone et thermographie infrarouge en Île-de-France. Toiture, façade, panneaux solaires. Agréé DGAC. Devis gratuit sous 24h.">
-  <meta property="og:image"        content="https://aquilair.fr/assets/images/og-image.jpg">
+  <meta property="og:image"        content="https://aquilair.fr/assets/ressources/images/og-image.jpg">
   <meta property="og:image:width"  content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt"    content="Drone Aquilair en mission d'inspection thermique d'un bâtiment en Île-de-France">
@@ -38,7 +41,7 @@
   <meta name="twitter:site"        content="@AquilairDrone">
   <meta name="twitter:title"       content="Inspection Drone & Thermographie Bâtiment — Aquilair">
   <meta name="twitter:description" content="Inspection par drone et thermographie infrarouge en Île-de-France. Agréé DGAC. Devis gratuit sous 24h.">
-  <meta name="twitter:image"       content="https://aquilair.fr/assets/images/og-image.jpg">
+  <meta name="twitter:image"       content="https://aquilair.fr/assets/ressources/images/og-image.jpg">
   <meta name="twitter:image:alt"   content="Drone Aquilair en mission d'inspection thermique">
 
   <!-- ── SCHEMA.ORG JSON-LD ─────────────────────────────── -->
@@ -53,8 +56,8 @@
     "legalName": "Aquilair SAS",
     "description": "Aquilair est spécialisé en inspection par drone et thermographie aérienne pour bâtiments, toitures et panneaux photovoltaïques en Île-de-France. Pilotes certifiés DGAC.",
     "url": "https://aquilair.fr",
-    "logo": "https://aquilair.fr/assets/images/logo.png",
-    "image": "https://aquilair.fr/assets/images/og-image.jpg",
+    "logo": "https://aquilair.fr/assets/ressources/images/logo.png",
+    "image": "https://aquilair.fr/assets/ressources/images/og-image.jpg",
     "telephone": "+33600000000",
     "email": "contact@aquilair.fr",
     "foundingDate": "2020",
@@ -160,17 +163,17 @@
   <!-- ── PERFORMANCE ─────────────────────────────────────── -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="assets/css/style.css" as="style">
-  <link rel="preload" href="assets/js/main.js"   as="script">
+  <link rel="preload" href="style.css" as="style">
+  <link rel="preload" href="main.js"   as="script">
 
   <!-- Favicon & PWA -->
-  <link rel="icon" type="image/svg+xml"           href="/assets/images/favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180"    href="/assets/images/apple-touch-icon.png">
+  <!-- <link rel="icon" type="image/svg+xml" href="./assets/ressources/images/favicon.svg"> À décommenter quand tu auras le fichier -->
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./assets/ressources/images/favicon-32x32.png"> À décommenter quand tu auras le fichier -->
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="./assets/ressources/images/apple-touch-icon.png"> À décommenter quand tu auras le fichier -->
   <link rel="manifest"                             href="/manifest.webmanifest">
   <meta name="theme-color" content="#06080B">
 
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body itemscope itemtype="https://schema.org/WebPage">
@@ -195,14 +198,14 @@
       <!--
         VIDEO PLACEHOLDER — remplace les sources par ta vidéo.
         · Format : MP4 H.264, 1920×1080, <8 Mo, 15–25s en boucle
-        · Ajoute poster="assets/images/hero-poster.jpg" pour améliorer le LCP
+        · Ajoute  pour améliorer le LCP
         · Sources gratuites : pexels.com/search/videos/drone+roof
       -->
       <video autoplay muted loop playsinline preload="metadata"
-        poster="assets/images/hero-poster.jpg"
+        
         aria-hidden="true"
         title="Drone Aquilair en mission d'inspection aérienne en Île-de-France">
-        <source src="assets/video/hero-drone.mp4" type="video/mp4">
+        <source src="./assets/ressources/videos/hero-drone.webm" type="video/webm">
       </video>
     </div>
 
@@ -699,7 +702,7 @@
   </footer>
 
   <!-- JS en defer : non bloquant pour le rendu -->
-  <script src="assets/js/main.js" defer></script>
+  <script src="main.js" defer></script>
 
 </body>
 </html>
