@@ -163,16 +163,19 @@
   <!-- ── PERFORMANCE ─────────────────────────────────────── -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="style.css" as="style">
-  <link rel="preload" href="main.js"   as="script">
+  <link rel="preload" href="./assets/css/style.css" as="style">
+  <link rel="preload" href="./assets/js/main.js"    as="script">
+  
+  
 
   <!-- Favicon & PWA -->
   <!-- <link rel="icon" type="image/svg+xml" href="./assets/ressources/images/favicon.svg"> À décommenter quand tu auras le fichier -->
   <!-- <link rel="icon" type="image/png" sizes="32x32" href="./assets/ressources/images/favicon-32x32.png"> À décommenter quand tu auras le fichier -->
   <!-- <link rel="apple-touch-icon" sizes="180x180" href="./assets/ressources/images/apple-touch-icon.png"> À décommenter quand tu auras le fichier -->
- 
+  
+  
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body itemscope itemtype="https://schema.org/WebPage">
@@ -201,7 +204,7 @@
         · Sources gratuites : pexels.com/search/videos/drone+roof
       -->
       <video autoplay muted loop playsinline preload="metadata"
-
+        
         aria-hidden="true"
         title="Drone Aquilair en mission d'inspection aérienne en Île-de-France">
         <source src="./assets/ressources/videos/hero-drone.webm" type="video/webm">
@@ -701,7 +704,7 @@
   </footer>
 
   <!-- JS en defer : non bloquant pour le rendu -->
-  <script src="main.js" defer></script>
+  <script src="./assets/js/main.js" defer></script>
 
 </body>
 </html>
