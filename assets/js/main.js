@@ -83,18 +83,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Already handled via CSS animation-play-state: paused on hover.
 
 
-/* ── FORM feedback ───────────────────────────────────────── */
+/* ── FORM feedback + Formspree ───────────────────────────── */
 const form = document.querySelector('.form');
 const submitBtn = form ? form.querySelector('.form-submit') : null;
 
 if (form && submitBtn) {
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // Basic required field check
-    const required = form.querySelectorAll('input[required], select[required], textarea[required]');
+    // Validation basique
+    const required = form.querySelectorAll('input[required], select[required]');
     let valid = true;
-
     required.forEach(field => {
       if (!field.value.trim()) {
         valid = false;
@@ -104,24 +103,42 @@ if (form && submitBtn) {
         }, { once: true });
       }
     });
-
     if (!valid) return;
 
-    // Simulate send
+    // Visuel envoi en cours
     const original = submitBtn.textContent;
     submitBtn.textContent = 'Envoi en cours…';
     submitBtn.disabled = true;
 
-    setTimeout(() => {
-      submitBtn.textContent = '✓ Message envoyé';
-      submitBtn.style.background = '#1A9E4A';
+    // Envoi à Formspree
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        submitBtn.textContent = '✓ Message envoyé';
+        submitBtn.style.background = '#1A9E4A';
+        form.reset();
+        setTimeout(() => {
+          submitBtn.textContent = original;
+          submitBtn.style.background = '';
+          submitBtn.disabled = false;
+        }, 3500);
+      } else {
+        throw new Error();
+      }
+    } catch {
+      submitBtn.textContent = '✗ Erreur — réessayez';
+      submitBtn.style.background = '#FF4444';
       setTimeout(() => {
         submitBtn.textContent = original;
         submitBtn.style.background = '';
         submitBtn.disabled = false;
-        form.reset();
-      }, 3500);
-    }, 1200);
+      }, 3000);
+    }
   });
 }
 
