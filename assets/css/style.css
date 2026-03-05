@@ -285,11 +285,6 @@ body::after {
   text-transform: uppercase;
   color: var(--grey);
 }
-.hero-scroll-line {
-  width: 1px;
-  height: 44px;
-  background: linear-gradient(to bottom, var(--blue), transparent);
-}
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
