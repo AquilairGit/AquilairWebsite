@@ -897,7 +897,7 @@ section { padding: 8rem 5vw; }
   grid-template-columns: 4rem 1fr 2.5rem;
   align-items: center;
   gap: 1.5rem;
-  padding: 2rem 0 2rem 1.5rem;
+  padding: 1.2rem 0 1.2rem 1.5rem;
   cursor: pointer;
   transition: background 0.2s;
   user-select: none;
@@ -943,7 +943,7 @@ section { padding: 8rem 5vw; }
   background: var(--blue-dim);
 }
 .faq-answer {
-  padding: 0 2rem 2rem calc(1.5rem + 4rem + 1.5rem);
+  padding: 0 2rem 1.2rem calc(1.5rem + 4rem + 1.5rem);
 }
 .faq-answer p {
   font-size: 0.9rem;

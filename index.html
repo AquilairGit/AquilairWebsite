@@ -98,7 +98,7 @@
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
         "opens": "08:00",
         "closes": "18:00"
       }
@@ -111,53 +111,54 @@
   </script>
 
   <!-- 2. FAQPage — rich snippets dans les SERPs Google -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Combien coûte une inspection de toiture par drone ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Le prix d'une inspection de toiture par drone varie selon la superficie et la complexité. Aquilair propose des devis gratuits sous 24h. Contactez-nous pour une estimation personnalisée."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Faut-il une autorisation pour faire voler un drone en Île-de-France ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Oui. L'Île-de-France est très réglementée (zones CTR autour des aéroports, espaces urbains denses). Aquilair est agréé DGAC et gère toutes les autorisations de vol nécessaires pour ses missions."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "En quoi la thermographie par drone est-elle utile pour un bâtiment ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "La thermographie drone révèle fuites thermiques, ponts froids, infiltrations d'eau et défauts d'isolation invisibles à l'œil nu. Nos rapports sont conformes à la norme EN 13187."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Quel est le délai pour recevoir le rapport d'inspection drone ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Aquilair livre le rapport complet sous 5 jours ouvrés : photos annotées, cartographie des anomalies, thermogrammes calibrés et recommandations priorisées."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "La thermographie drone peut-elle inspecter des panneaux solaires ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Oui. La thermographie infrarouge identifie modules défaillants, points chauds (hot spots), cellules en court-circuit et connexions oxydées — sans interrompre la production photovoltaïque."
-        }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Combien coûte une inspection de toiture par drone ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le prix d'une inspection de toiture par drone varie selon la superficie, l'accessibilité du site et le type de rapport souhaité. Aquilair propose des devis gratuits sous 24h. Contactez-nous pour une estimation personnalisée en Île-de-France."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "Quelles sont les autorisations nécessaires pour voler en drone en France ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En France, le vol de drone est soumis à une réglementation stricte. Selon la zone et le type de mission, plusieurs démarches sont nécessaires : déclaration en préfecture, demande d'autorisation auprès de la DGAC, et respect des zones CTR autour des aéroports. Aquilair gère l'intégralité de ces démarches administratives pour chaque mission, garantissant un vol sécurisé et 100% légal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "En quoi la thermographie par drone est-elle utile pour un bâtiment ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La thermographie drone révèle des anomalies invisibles à l'œil nu : fuites thermiques, ponts froids, infiltrations d'eau et défauts d'isolation. Elle est essentielle pour les diagnostics DPE, la maintenance préventive et les contentieux assurantiels."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quel est le délai pour recevoir le rapport d'inspection drone ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aquilair livre le rapport complet sous 5 jours ouvrés après la mission : photos annotées en haute résolution, cartographie des anomalies, thermogrammes calibrés et recommandations d'intervention priorisées."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "La thermographie drone peut-elle inspecter des panneaux photovoltaïques ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, c'est l'une des applications les plus efficaces. La thermographie infrarouge identifie modules défaillants, points chauds (hot spots), cellules en court-circuit et connexions oxydées — sans interrompre la production de votre installation solaire."
+      }
+    }
+  ]
+}
+</script>
   </script>
 
   <!-- ── PERFORMANCE ─────────────────────────────────────── -->
@@ -545,11 +546,11 @@
       <details class="faq-item reveal">
         <summary class="faq-question">
           <span class="faq-question-num">02</span>
-          <span class="faq-question-text">Faut-il une autorisation pour faire voler un drone en Île-de-France ?</span>
+          <span class="faq-question-text">Quelles sont les autorisations nécessaires pour voler en drone en France ?</span>
           <span class="faq-question-icon">+</span>
         </summary>
         <div class="faq-answer">
-          <p>Oui. L'Île-de-France est très réglementée (zones CTR autour des aéroports de Paris, espaces urbains denses). Aquilair est <strong>agréé DGAC</strong> et prend en charge toutes les autorisations de vol nécessaires (NOTAM, déclarations préfectorales) pour chaque mission.</p>
+          <p>En France, le vol de drone est soumis à une réglementation stricte. Selon la zone et le type de mission, plusieurs démarches sont nécessaires : <strong>déclaration en préfecture</strong>, demande d'autorisation auprès de la <strong>DGAC</strong>, et respect des zones CTR autour des aéroports. Aquilair gère l'intégralité de ces démarches administratives pour chaque mission, garantissant un vol <strong>sécurisé et 100% légal</strong>.</p>
         </div>
       </details>
 
@@ -615,7 +616,7 @@
         </address>
       </div>
 
-      <form class="form" novalidate aria-label="Formulaire de demande de devis inspection drone" method="POST" action="/contact">
+      <form class="form" novalidate aria-label="Formulaire de demande de devis inspection drone" method="POST" action="https://formspree.io/f/xlgprvyb">
         <div class="form-row">
           <div class="field">
             <label for="nom">Nom *</label>
@@ -700,10 +701,9 @@
         <div class="footer-col">
           <h5>Légal</h5>
           <ul role="list">
-            <li><a href="/mentions-legales">Mentions légales</a></li>
-            <li><a href="/confidentialite">Politique de confidentialité</a></li>
-            <li><a href="/cgv">CGV</a></li>
-            <li><a href="/sitemap.xml">Plan du site</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">CGV</a></li>
           </ul>
         </div>
       </nav>
