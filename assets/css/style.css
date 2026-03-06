@@ -77,16 +77,14 @@ body::after {
 }
 
 .nav-logo {
-  font-family: var(--font-display);
-  font-size: 1.75rem;
-  letter-spacing: 0.14em;
-  color: var(--white);
   text-decoration: none;
   line-height: 1;
+  display: flex;
+  align-items: center;
 }
-.nav-logo em {
-  color: var(--blue-bright);
-  font-style: normal;
+.nav-logo img {
+  height: 35px;
+  width: auto;
 }
 
 .nav-links {
@@ -1066,12 +1064,14 @@ footer {
 }
 
 .footer-brand {
-  font-family: var(--font-display);
-  font-size: 3rem;
-  letter-spacing: 0.1em;
   line-height: 1;
 }
-.footer-brand em { color: var(--blue-bright); font-style: normal; }
+
+.footer-brand img {
+  height: 50px;
+  width: auto;
+}
+
 .footer-tagline {
   margin-top: 0.5rem;
   font-family: var(--font-mono);
