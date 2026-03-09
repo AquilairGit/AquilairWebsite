@@ -181,9 +181,7 @@
 
 
   <!-- Favicon & PWA -->
-  <!-- <link rel="icon" type="image/svg+xml" href="./assets/ressources/images/favicon.svg"> À décommenter quand tu auras le fichier -->
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./assets/ressources/images/favicon-32x32.png"> À décommenter quand tu auras le fichier -->
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="./assets/ressources/images/apple-touch-icon.png"> À décommenter quand tu auras le fichier -->
+  <link rel="icon" type="image/png" href="./favicon64x64.png">
 
 
 
@@ -195,8 +193,11 @@
   <!-- ══ NAV ══════════════════════════════════════════════════ -->
   <nav class="nav" role="navigation" aria-label="Navigation principale">
     <a href="/" class="nav-logo" aria-label="Aquilair — Retour à l'accueil">
-      <img src="./assets/ressources/images/logo_complet.svg" alt="Logo Aquilair — Inspection drone Île-de-France"
-        width="100" height="50">
+      <picture>
+        <source srcset="./assets/ressources/images/logo_complet.svg" type="image/svg+xml">
+        <img src="./assets/ressources/images/logo_complet.png" alt="Logo Aquilair — Inspection drone Île-de-France"
+         width="100" height="50">
+      </picture>
     </a>
     <ul class="nav-links" role="list">
       <li><a href="#services">Services</a></li>
@@ -777,8 +778,11 @@
     <div class="footer-top">
       <div>
         <a href="/" class="footer-brand" aria-label="Aquilair — Retour à l'accueil">
-          <img src="./assets/ressources/images/logo_complet.svg" alt="Logo Aquilair — Inspection drone Île-de-France"
-            width="120" height="60">
+          <picture>
+            <source srcset="./assets/ressources/images/logo_complet.svg" type="image/svg+xml">
+            <img src="./assets/ressources/images/logo_complet.png" alt="Logo Aquilair — Inspection drone Île-de-France"
+              width="120" height="60">
+          </picture>
         </a>
         <div class="footer-tagline">Inspection drone · Thermographie · Île-de-France et alentours</div>
       </div>
