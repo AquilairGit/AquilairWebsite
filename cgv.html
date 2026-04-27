@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conditions Générales de Vente — Aquilair</title>
+  <meta name="description"
+    content="Conditions générales de vente d'Aquilair, prestations d'inspection par drone et thermographie infrarouge en Île-de-France.">
+  <meta name="robots" content="noindex, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/ressources/images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/ressources/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/ressources/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/ressources/images/apple-touch-icon.png">
+
+  <!-- Stylesheet principal du site -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Styles spécifiques aux pages légales -->
+  <style>
+    .legal-page {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 9rem 2rem 6rem;
+    }
+
+    .legal-page .legal-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--blue-bright);
+      margin-bottom: 1.2rem;
+    }
+
+    .legal-page .legal-label::before {
+      content: '';
+      width: 24px;
+      height: 1px;
+      background: var(--blue-bright);
+    }
+
+    .legal-page h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      line-height: 1;
+      letter-spacing: 0.02em;
+      color: var(--white);
+      margin-bottom: 2rem;
+    }
+
+    .legal-page .lead {
+      color: var(--grey-2);
+      font-size: 1rem;
+      line-height: 1.85;
+      margin-bottom: 4rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .legal-page .toc {
+      background: var(--dark);
+      border: 1px solid var(--border);
+      padding: 2rem 2.2rem;
+      margin-bottom: 5rem;
+    }
+
+    .legal-page .toc-label {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--blue-bright);
+      margin-bottom: 1.5rem;
+    }
+
+    .legal-page .toc ol {
+      counter-reset: toc;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      column-count: 2;
+      column-gap: 2.5rem;
+    }
+
+    .legal-page .toc ol li {
+      counter-increment: toc;
+      padding-left: 2.5rem;
+      margin-bottom: 0.6rem;
+      position: relative;
+      break-inside: avoid;
+    }
+
+    .legal-page .toc ol li::before {
+      content: counter(toc, decimal-leading-zero);
+      position: absolute;
+      left: 0;
+      top: 0.15rem;
+      color: var(--blue-bright);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.05em;
+    }
+
+    .legal-page .toc a {
+      color: var(--grey-2);
+      text-decoration: none;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      transition: color 0.2s;
+    }
+
+    .legal-page .toc a:hover { color: var(--blue-bright); }
+
+    .legal-page h2 {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      letter-spacing: 0.04em;
+      color: var(--white);
+      margin: 4rem 0 1.5rem;
+      padding-left: 1.2rem;
+      border-left: 2px solid var(--blue);
+      line-height: 1.2;
+    }
+
+    .legal-page h2:first-of-type { margin-top: 0; }
+
+    .legal-page h3 {
+      font-family: var(--font-mono);
+      font-weight: 400;
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--blue-bright);
+      margin: 2.2rem 0 1rem;
+    }
+
+    .legal-page p,
+    .legal-page li {
+      color: var(--grey-2);
+      font-size: 0.93rem;
+      line-height: 1.85;
+    }
+
+    .legal-page p { margin-bottom: 1.3rem; }
+
+    .legal-page strong {
+      color: var(--white);
+      font-weight: 500;
+    }
+
+    .legal-page ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0 0 1.5rem;
+    }
+
+    .legal-page ul li {
+      position: relative;
+      padding-left: 1.8rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .legal-page ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--blue-bright);
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+    }
+
+    .legal-page .highlight-box {
+      background: var(--blue-dim);
+      border-left: 2px solid var(--blue-bright);
+      padding: 1.6rem 1.8rem;
+      margin: 2rem 0;
+    }
+
+    .legal-page .highlight-box::before {
+      content: 'Important';
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--blue-bright);
+      margin-bottom: 0.8rem;
+    }
+
+    .legal-page .highlight-box p:last-child { margin-bottom: 0; }
+    .legal-page .highlight-box p { color: var(--white); }
+
+    .legal-page .doc-footer {
+      margin-top: 6rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid var(--border);
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--grey);
+      letter-spacing: 0.05em;
+      line-height: 1.8;
+    }
+
+    .legal-page .doc-footer span { display: block; }
+
+    .legal-page .doc-footer .doc-version {
+      color: var(--blue-bright);
+      margin-bottom: 0.4rem;
+    }
+
+    @media (max-width: 768px) {
+      .legal-page { padding: 7rem 1.2rem 4rem; }
+      .legal-page .toc { padding: 1.5rem; }
+      .legal-page .toc ol { column-count: 1; }
+      .legal-page h2 { font-size: 1.5rem; margin-top: 3rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══ NAV ═══════════════════════════════════════════════════ -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <a href="/" class="nav-logo" aria-label="Aquilair — Retour à l'accueil">
+      <picture>
+        <source srcset="./assets/ressources/images/logo_complet.svg" type="image/svg+xml">
+        <img src="./assets/ressources/images/logo_complet.png"
+          alt="Logo Aquilair — Inspection drone Île-de-France"
+          width="100" height="50">
+      </picture>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#thermographie">Thermographie</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+    <a href="/#contact" class="nav-cta">Devis gratuit</a>
+  </nav>
+
+  <!-- ══ CGV ═══════════════════════════════════════════════════ -->
+  <main class="legal-page">
+
+    <div class="legal-label">Document légal</div>
+    <h1>CONDITIONS GÉNÉRALES<br>DE VENTE</h1>
+
+    <p class="lead">
+      Les présentes Conditions Générales de Vente (ci-après les « CGV ») régissent l'ensemble des prestations d'inspection par drone et de thermographie infrarouge proposées par Aquilair. Elles s'appliquent à toute commande passée par un client professionnel ou particulier, et prévalent sur tout autre document du Client, sauf accord écrit contraire.
+    </p>
+
+    <nav class="toc" aria-label="Sommaire des CGV">
+      <div class="toc-label">Sommaire</div>
+      <ol>
+        <li><a href="#article-1">Identité du prestataire</a></li>
+        <li><a href="#article-2">Objet et champ d'application</a></li>
+        <li><a href="#article-3">Devis et commande</a></li>
+        <li><a href="#article-4">Prix et modalités de paiement</a></li>
+        <li><a href="#article-5">Préparation de mission</a></li>
+        <li><a href="#article-6">Conditions de vol et report</a></li>
+        <li><a href="#article-7">Annulation et remboursement</a></li>
+        <li><a href="#article-8">Obligations du Client</a></li>
+        <li><a href="#article-9">Livrables et propriété</a></li>
+        <li><a href="#article-10">Confidentialité et RGPD</a></li>
+        <li><a href="#article-11">Responsabilité et assurance</a></li>
+        <li><a href="#article-12">Force majeure</a></li>
+        <li><a href="#article-13">Droit applicable et litiges</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="article-1">Article 1 — Identité du prestataire</h2>
+    <p>
+      Le prestataire est <strong>Aquilair</strong>, exploitée par Louis Antona, micro-entreprise immatriculée sous le numéro <strong>SIRET 884 221 128 00025</strong>, dont le siège social est situé au 120 Avenue Saint-Exupéry, 92160 Antony, France.
+    </p>
+    <p>
+      Aquilair est enregistrée comme exploitant d'aéronef sans équipage à bord auprès de la Direction Générale de l'Aviation Civile (DGAC) sous le numéro opérateur <strong>FRAwn9p9uv1tnjpl</strong>. Les pilotes intervenant pour Aquilair sont titulaires des certifications théoriques et pratiques requises par la réglementation en vigueur.
+    </p>
+    <p>
+      Contact : <strong>aquilair.info@gmail.com</strong> · <strong>+33 6 63 54 64 49</strong> · <strong>aquilair.fr</strong>
+    </p>
+
+    <h2 id="article-2">Article 2 — Objet et champ d'application</h2>
+    <p>
+      Les présentes CGV ont pour objet de définir les conditions dans lesquelles Aquilair fournit à ses clients (ci-après le « Client ») les prestations suivantes :
+    </p>
+    <ul>
+      <li>Inspection visuelle par drone (toiture, façade, infrastructure)</li>
+      <li>Thermographie aérienne infrarouge de bâtiments et installations</li>
+      <li>Contrôle de panneaux photovoltaïques</li>
+      <li>Suivi de chantier et cartographie aérienne</li>
+      <li>Détection de faune par drone thermique</li>
+      <li>Toute autre prestation aérienne expressément définie au devis</li>
+    </ul>
+    <p>
+      Toute commande implique l'acceptation pleine et entière des présentes CGV par le Client. Aquilair se réserve le droit de modifier les présentes CGV à tout moment ; les CGV applicables sont celles en vigueur à la date de la commande.
+    </p>
+
+    <h2 id="article-3">Article 3 — Devis et commande</h2>
+    <p>
+      Toute prestation fait l'objet d'un <strong>devis écrit et détaillé</strong>, transmis au Client par courrier électronique. Le devis précise notamment l'objet de la mission, les livrables attendus, les délais d'exécution prévisionnels, le prix global et la ventilation entre la part « préparation de mission » et la part « exécution de la prestation ».
+    </p>
+    <p>
+      Le devis est valable <strong>30 jours à compter de sa date d'émission</strong>. La commande est réputée ferme et définitive à compter de la réception par Aquilair du devis daté, signé et revêtu de la mention « Bon pour accord » par le Client.
+    </p>
+
+    <h2 id="article-4">Article 4 — Prix et modalités de paiement</h2>
+
+    <h3>4.1 Prix</h3>
+    <p>
+      Les prix sont exprimés en euros, hors taxes et toutes taxes comprises. Aquilair est <strong>assujettie à la TVA</strong> au taux légal en vigueur (20 % à la date des présentes). Tout déplacement au-delà de la zone d'intervention standard (Île-de-France et départements limitrophes) fait l'objet d'une facturation complémentaire précisée au devis.
+    </p>
+
+    <h3>4.2 Délai de paiement</h3>
+    <p>
+      Sauf mention contraire au devis, le règlement de la prestation s'effectue par virement bancaire dans un délai de <strong>30 jours à compter de la date d'émission de la facture</strong>, conformément aux dispositions de la loi de modernisation de l'économie (LME) du 4 août 2008.
+    </p>
+
+    <h3>4.3 Retard de paiement</h3>
+    <p>
+      Tout retard de paiement entraîne, de plein droit et sans mise en demeure préalable, l'application de pénalités de retard calculées au taux d'intérêt appliqué par la Banque centrale européenne à son opération de refinancement la plus récente, majoré de 10 points de pourcentage. S'y ajoute une <strong>indemnité forfaitaire de 40 €</strong> pour frais de recouvrement (article L.441-10 du Code de commerce).
+    </p>
+
+    <h2 id="article-5">Article 5 — Préparation de mission</h2>
+    <p>
+      Toute prestation comprend une phase préalable de <strong>préparation de mission</strong>, dont le coût est expressément identifié au devis. Cette phase couvre notamment :
+    </p>
+    <ul>
+      <li>L'analyse du site et l'étude des contraintes aériennes (zones CTR, zones P, ZIT, ZICAD)</li>
+      <li>La constitution et le dépôt des demandes d'autorisation auprès des autorités compétentes (Préfecture, DGAC, Architectes des Bâtiments de France, etc.)</li>
+      <li>L'élaboration du protocole de vol et des analyses de risque (SORA si applicable)</li>
+      <li>La consultation des bulletins météorologiques et la planification opérationnelle</li>
+    </ul>
+
+    <div class="highlight-box">
+      <p>
+        En cas d'annulation de la mission après acceptation du devis, ou en cas d'impossibilité de réaliser le vol pour des raisons indépendantes de la volonté d'Aquilair (météo, refus d'autorisation, conditions de sécurité non réunies), <strong>la part « préparation de mission » reste due</strong> et n'est pas remboursable, dès lors que les démarches afférentes ont été engagées.
+      </p>
+    </div>
+
+    <h2 id="article-6">Article 6 — Conditions de vol et report</h2>
+
+    <h3>6.1 Décision de vol</h3>
+    <p>
+      La <strong>décision finale de procéder au vol</strong> appartient exclusivement au télépilote en sa qualité de commandant de bord. Cette décision est prise au regard des conditions météorologiques (vent, précipitations, visibilité, plafond nuageux), des conditions de sécurité du site, de la présence de tiers, et de toute autre circonstance susceptible de compromettre la sécurité du vol ou la qualité des données collectées.
+    </p>
+
+    <h3>6.2 Report de mission</h3>
+    <p>
+      Aquilair se réserve le droit de <strong>reporter la mission jusqu'à la veille de la date convenue, voire le jour même</strong>, si les conditions météorologiques ou de sécurité ne sont pas réunies. Une nouvelle date est alors proposée au Client dans les meilleurs délais. Ce report ne peut donner lieu à aucune indemnité ou pénalité à l'encontre d'Aquilair.
+    </p>
+
+    <h3>6.3 Conditions thermographiques</h3>
+    <p>
+      Pour les prestations de thermographie, des conditions spécifiques sont requises (écart thermique intérieur/extérieur ≥ 10 °C, absence d'ensoleillement direct sur les surfaces inspectées, vent faible, absence de précipitations dans les 24 heures précédant la mission). Si ces conditions ne sont pas réunies, Aquilair peut refuser de procéder au vol ou indiquer une fiabilité réduite des données collectées.
+    </p>
+
+    <h2 id="article-7">Article 7 — Annulation et remboursement</h2>
+
+    <h3>7.1 Annulation par le Client</h3>
+    <p>
+      Toute annulation de la mission par le Client après acceptation du devis donne lieu à la facturation intégrale de la part « préparation de mission » telle qu'identifiée au devis. La part « exécution de la prestation » n'est due que si la mission a été effectivement réalisée.
+    </p>
+
+    <h3>7.2 Impossibilité de vol</h3>
+    <p>
+      Si la mission ne peut être menée à bien pour une raison indépendante de la volonté d'Aquilair (refus d'autorisation administrative, conditions météorologiques défavorables persistantes, événement de force majeure, refus d'accès au site), <strong>seul le coût de la prestation effectivement non réalisée est remboursé au Client</strong>. La part « préparation de mission » reste acquise à Aquilair.
+    </p>
+
+    <h3>7.3 Annulation par Aquilair</h3>
+    <p>
+      Aquilair se réserve le droit d'annuler une mission en cas de risque manifeste pour la sécurité, de défaillance technique, ou de tout autre motif légitime. Dans ce cas, la part « exécution » est intégralement remboursée et une nouvelle date peut être proposée au Client.
+    </p>
+
+    <h2 id="article-8">Article 8 — Obligations du Client</h2>
+    <p>Le Client s'engage à :</p>
+    <ul>
+      <li>Garantir l'accès au site à la date convenue, ainsi qu'aux abords nécessaires au décollage et à l'atterrissage du drone</li>
+      <li>Informer Aquilair de toute contrainte particulière (présence de tiers, animaux, obstacles, restrictions imposées par le gestionnaire du site)</li>
+      <li>Informer les occupants, riverains ou personnels présents sur le site de la mission de vol dans les délais appropriés, notamment au regard du Règlement Général sur la Protection des Données (RGPD)</li>
+      <li>Disposer des autorisations nécessaires pour autoriser le survol des biens lui appartenant ou dont il a la gestion</li>
+      <li>Régler les sommes dues dans les délais convenus</li>
+    </ul>
+    <p>
+      Le Client reconnaît qu'<strong>il lui appartient d'obtenir les autorisations préalables des propriétaires des biens survolés</strong> dès lors que ceux-ci ne lui appartiennent pas. Aquilair ne saurait être tenue responsable d'un défaut d'autorisation imputable au Client.
+    </p>
+
+    <h2 id="article-9">Article 9 — Livrables et propriété</h2>
+
+    <h3>9.1 Délai de livraison</h3>
+    <p>
+      Sauf mention contraire au devis, le rapport d'inspection et les livrables associés sont transmis au Client dans un délai de <strong>5 jours ouvrés</strong> à compter de la date de réalisation effective du vol. Ce délai peut être prolongé en cas de mission complexe ou de volume de données important, le Client en étant alors informé.
+    </p>
+
+    <h3>9.2 Propriété des données</h3>
+    <p>
+      Aquilair conserve la propriété des <strong>données brutes</strong> issues de la mission (fichiers RAW, vidéos originales, données capteurs). Le Client se voit accorder un droit d'<strong>usage non exclusif et non transférable</strong> sur les livrables (rapport, thermogrammes annotés, orthophotos), pour ses besoins internes et professionnels.
+    </p>
+
+    <h3>9.3 Diffusion et revente</h3>
+    <p>
+      Toute diffusion publique, revente ou cession à un tiers des livrables est soumise à l'accord écrit préalable d'Aquilair. La mention « Inspection réalisée par Aquilair » doit être conservée sur les documents diffusés.
+    </p>
+
+    <h2 id="article-10">Article 10 — Confidentialité et RGPD</h2>
+    <p>
+      Aquilair s'engage à respecter la <strong>confidentialité</strong> des informations communiquées par le Client et des données collectées lors de la mission. Aucune donnée n'est cédée à un tiers sans accord préalable écrit du Client.
+    </p>
+    <p>
+      Conformément au Règlement (UE) 2016/679 (RGPD), Aquilair met tout en œuvre pour minimiser la captation de données personnelles lors de ses missions. Lorsqu'une captation de données pouvant identifier des personnes physiques est inévitable, ces données sont floutées sur les livrables ou conservées de manière sécurisée pour la durée strictement nécessaire à la mission, puis supprimées.
+    </p>
+    <p>
+      Le Client peut exercer ses droits d'accès, de rectification et de suppression auprès d'Aquilair par courrier électronique à <strong>aquilair.info@gmail.com</strong>.
+    </p>
+
+    <h2 id="article-11">Article 11 — Responsabilité et assurance</h2>
+
+    <h3>11.1 Assurance</h3>
+    <p>
+      Aquilair est titulaire d'une police d'assurance responsabilité civile professionnelle aviation conforme aux exigences de la réglementation française et européenne applicable aux exploitants d'aéronefs sans équipage à bord. Une attestation peut être communiquée sur demande.
+    </p>
+
+    <h3>11.2 Limitation de responsabilité</h3>
+    <p>
+      La responsabilité d'Aquilair est strictement limitée aux dommages directs et matériels prouvés résultant d'une faute imputable à Aquilair. Sont expressément exclus de cette responsabilité :
+    </p>
+    <ul>
+      <li>Les dommages indirects, immatériels ou consécutifs (perte d'exploitation, perte de chiffre d'affaires, atteinte à l'image)</li>
+      <li>Les défauts ou anomalies non détectés par la prestation, étant entendu que la mission consiste en un constat à l'instant T et ne saurait constituer une garantie d'absence de défauts</li>
+      <li>Les conséquences de l'utilisation par le Client des livrables au-delà de leur usage prévu</li>
+    </ul>
+    <p>
+      En tout état de cause, la responsabilité totale d'Aquilair est <strong>limitée au montant total hors taxes effectivement réglé par le Client au titre de la prestation litigieuse</strong>, dans la limite des dispositions légales impératives applicables.
+    </p>
+
+    <h2 id="article-12">Article 12 — Force majeure</h2>
+    <p>
+      Aquilair ne saurait être tenue responsable de l'inexécution ou du retard d'exécution de ses obligations en cas de survenance d'un événement de <strong>force majeure</strong> au sens de l'article 1218 du Code civil. Sont notamment considérés comme tels, sans que cette liste soit limitative : les conditions météorologiques exceptionnelles, les restrictions ou interdictions de vol décidées par les autorités, les pannes ou défaillances techniques imprévisibles, les conflits sociaux, les épidémies, les actes de terrorisme.
+    </p>
+
+    <h2 id="article-13">Article 13 — Droit applicable et litiges</h2>
+    <p>
+      Les présentes CGV sont soumises au <strong>droit français</strong>. En cas de litige, les parties s'efforceront de trouver une solution amiable préalablement à toute action contentieuse.
+    </p>
+    <p>
+      À défaut d'accord amiable, et sous réserve des dispositions légales impératives applicables aux consommateurs, <strong>tout litige sera soumis à la compétence exclusive du Tribunal de Commerce de Nanterre (92)</strong>.
+    </p>
+    <p>
+      Conformément aux articles L.611-1 et suivants du Code de la consommation, le Client consommateur peut recourir gratuitement au service de médiation de la consommation pour résoudre un litige. Les coordonnées du médiateur compétent sont communiquées sur demande.
+    </p>
+
+    <div class="doc-footer">
+      <span class="doc-version">Version 1.0 — Avril 2026</span>
+      <span>Aquilair · SIRET 884 221 128 00025 · DGAC FRAwn9p9uv1tnjpl</span>
+    </div>
+
+  </main>
+
+  <!-- ══ FOOTER ════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="footer-top">
+      <div>
+        <a href="/" class="footer-brand" aria-label="Aquilair — Retour à l'accueil">
+          <picture>
+            <source srcset="./assets/ressources/images/logo_complet.svg" type="image/svg+xml">
+            <img src="./assets/ressources/images/logo_complet.png"
+              alt="Logo Aquilair — Inspection drone Île-de-France"
+              width="120" height="60">
+          </picture>
+        </a>
+        <div class="footer-tagline">Inspection drone · Thermographie · Île-de-France et alentours</div>
+      </div>
+      <nav class="footer-cols" aria-label="Liens de pied de page">
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul role="list">
+            <li><a href="/#services">Inspection toiture drone</a></li>
+            <li><a href="/#thermographie">Thermographie bâtiment</a></li>
+            <li><a href="/#services">Inspection façade</a></li>
+            <li><a href="/#services">Panneaux solaires</a></li>
+            <li><a href="/#services">Infrastructure</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Entreprise</h5>
+          <ul role="list">
+            <li><a href="/#">À propos</a></li>
+            <li><a href="/#">Certifications DGAC</a></li>
+            <li><a href="/#">Nos réalisations</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Légal</h5>
+          <ul role="list">
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="/cgv.html">CGV</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Aquilair — Tous droits réservés</span>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/aquilair-drone" class="social-link"
+          aria-label="Aquilair sur LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61583037834172" class="social-link"
+          aria-label="Aquilair sur Facebook" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
