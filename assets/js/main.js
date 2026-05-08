@@ -178,3 +178,15 @@ const statsObserver = new IntersectionObserver((entries) => {
 
 const heroStats = document.querySelector('.hero-stats');
 if (heroStats) statsObserver.observe(heroStats);
+
+
+/* Thermo mode label sync avec animation IR */
+const thermoLabel = document.querySelector('.thermo-mode-label');
+if (thermoLabel) {
+  let isIR = false;
+  thermoLabel.textContent = 'Visible';
+  setInterval(() => {
+    isIR = !isIR;
+    thermoLabel.textContent = isIR ? 'Infrarouge' : 'Visible';
+  }, 4000);
+}

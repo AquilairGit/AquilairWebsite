@@ -559,22 +559,10 @@ section { padding: 8rem 5vw; }
   position: relative;
 }
 
-/* Le label change de texte via animation : VISIBLE / IR */
-.thermo-mode-label::after {
-  content: 'Visible';
-  animation: thermo-label-swap 8s ease-in-out infinite;
-}
-
 @keyframes thermo-mode-blink {
   0%, 12% { background: var(--blue-bright); box-shadow: 0 0 8px var(--blue-glow); }
   38%, 62% { background: #FF6B3D; box-shadow: 0 0 12px rgba(255, 107, 61, 0.6); }
   88%, 100% { background: var(--blue-bright); box-shadow: 0 0 8px var(--blue-glow); }
-}
-
-@keyframes thermo-label-swap {
-  0%, 24% { content: 'Visible'; }
-  26%, 74% { content: 'Infrarouge'; }
-  76%, 100% { content: 'Visible'; }
 }
 
 /* Léger overlay pour la profondeur */
