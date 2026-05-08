@@ -426,17 +426,20 @@
   <section class="thermo" id="thermographie" aria-labelledby="thermo-title">
     <div class="thermo-layout">
 
-      <div class="thermo-visual reveal" role="img"
-        aria-label="Thermogramme infrarouge d'une toiture montrant une anomalie thermique à 84°C détectée par drone">
-        <div class="thermo-ir" aria-hidden="true"></div>
-        <div class="thermo-fade" aria-hidden="true"></div>
-        <div class="thermo-badge" aria-hidden="true">Caméra FLIR · IR</div>
-        <div class="thermo-scale" aria-hidden="true"></div>
-        <div class="thermo-reading">
-          <div class="reading-val">+84°C</div>
-          <div class="reading-label">Anomalie détectée</div>
-        </div>
-      </div>
+<div class="thermo-visual reveal" role="img"
+  aria-label="Comparaison vue aérienne visible et thermogramme infrarouge d'une toiture par drone Aquilair">
+  <img class="thermo-img thermo-img--visible"
+    src="./assets/ressources/images/thermo-visible.jpg"
+    alt="Vue aérienne d'une toiture par drone">
+  <img class="thermo-img thermo-img--ir"
+    src="./assets/ressources/images/thermo-ir.jpg"
+    alt="Thermogramme infrarouge de la même toiture">
+  <div class="thermo-badge" aria-hidden="true">Caméra FLIR · IR</div>
+  <div class="thermo-mode" aria-hidden="true">
+    <span class="thermo-mode-dot"></span>
+    <span class="thermo-mode-label">Mode infrarouge</span>
+  </div>
+</div>
 
       <div class="thermo-content">
         <div class="label" aria-hidden="true">Technologie infrarouge</div>

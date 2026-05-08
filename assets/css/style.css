@@ -467,8 +467,140 @@ section { padding: 8rem 5vw; }
   transform: translate(2px, -2px);
 }
 
+/* ── THERMO VISUAL — comparaison visible / IR ─────────── */
+.thermo-visual {
+  position: relative;
+  aspect-ratio: 1.25 / 1;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--black);
+  box-shadow: 0 30px 80px -20px rgba(0,0,0,0.6);
+}
 
-/* ── THERMOGRAPHY ─────────────────────────────────────────── */
+.thermo-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  will-change: opacity, transform;
+}
+
+.thermo-img--visible {
+  opacity: 1;
+  z-index: 1;
+}
+
+.thermo-img--ir {
+  opacity: 0;
+  z-index: 2;
+  /* Cycle 8 secondes : 0% visible → 25% fade vers IR → 50% IR → 75% fade vers visible → 100% visible */
+  animation: thermo-cycle 8s ease-in-out infinite;
+}
+
+@keyframes thermo-cycle {
+  0%, 12% { opacity: 0; transform: scale(1.02); }
+  38%, 62% { opacity: 1; transform: scale(1); }
+  88%, 100% { opacity: 0; transform: scale(1.02); }
+}
+
+/* Badge "Caméra FLIR · IR" en haut à droite */
+.thermo-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 3;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: rgba(6, 8, 11, 0.75);
+  border: 1px solid var(--blue-dim);
+  padding: 0.5rem 0.85rem;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Indicateur de mode (visible/IR) en bas à gauche */
+.thermo-mode {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: rgba(6, 8, 11, 0.75);
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.85rem;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.thermo-mode-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--blue-bright);
+  animation: thermo-mode-blink 8s ease-in-out infinite;
+  box-shadow: 0 0 8px var(--blue-glow);
+}
+
+.thermo-mode-label {
+  position: relative;
+}
+
+/* Le label change de texte via animation : VISIBLE / IR */
+.thermo-mode-label::after {
+  content: 'Visible';
+  animation: thermo-label-swap 8s ease-in-out infinite;
+}
+
+@keyframes thermo-mode-blink {
+  0%, 12% { background: var(--blue-bright); box-shadow: 0 0 8px var(--blue-glow); }
+  38%, 62% { background: #FF6B3D; box-shadow: 0 0 12px rgba(255, 107, 61, 0.6); }
+  88%, 100% { background: var(--blue-bright); box-shadow: 0 0 8px var(--blue-glow); }
+}
+
+@keyframes thermo-label-swap {
+  0%, 24% { content: 'Visible'; }
+  26%, 74% { content: 'Infrarouge'; }
+  76%, 100% { content: 'Visible'; }
+}
+
+/* Léger overlay pour la profondeur */
+.thermo-visual::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent 70%, rgba(0,0,0,0.25) 100%);
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .thermo-img--ir,
+  .thermo-mode-dot,
+  .thermo-mode-label::after {
+    animation: none;
+  }
+  .thermo-img--ir { opacity: 0.5; }
+}
+
+
+
+
+
 .thermo {
   background: var(--black);
   position: relative;
@@ -490,47 +622,6 @@ section { padding: 8rem 5vw; }
   align-items: center;
 }
 
-/* Fake IR image */
-.thermo-visual {
-  position: relative;
-  aspect-ratio: 4/3;
-  overflow: hidden;
-  border: 1px solid var(--border);
-}
-.thermo-ir {
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 50% 40% at 30% 35%, #FF2200 0%, #FF8800 20%, #FFCC00 35%, transparent 55%),
-    radial-gradient(ellipse 30% 25% at 70% 65%, #0044FF 0%, #0088FF 22%, transparent 44%),
-    radial-gradient(ellipse 38% 32% at 55% 42%, #FF5500 0%, #FF9900 22%, transparent 42%),
-    linear-gradient(135deg, #071025 0%, #0a1a35 50%, #060E1A 100%);
-  filter: contrast(1.1) saturate(1.15);
-}
-.thermo-fade {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, var(--black) 0%, transparent 45%);
-}
-
-.thermo-badge {
-  position: absolute;
-  top: 1.2rem; right: 1.2rem;
-  font-family: var(--font-mono);
-  font-size: 0.58rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--blue-bright);
-  border: 1px solid rgba(26,107,255,0.35);
-  background: rgba(26,107,255,0.1);
-  padding: 7px 13px;
-  backdrop-filter: blur(6px);
-}
-
-.thermo-reading {
-  position: absolute;
-  bottom: 1.4rem; left: 1.4rem;
-}
 .reading-val {
   font-family: var(--font-display);
   font-size: 2.8rem;
@@ -543,17 +634,6 @@ section { padding: 8rem 5vw; }
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--grey);
-}
-
-/* Temp scale bar */
-.thermo-scale {
-  position: absolute;
-  right: 1.2rem; top: 50%; transform: translateY(-50%);
-  width: 12px;
-  height: 120px;
-  border-radius: 2px;
-  background: linear-gradient(to bottom, #FF0000, #FF8800, #FFFF00, #00FF88, #0066FF);
-  border: 1px solid rgba(255,255,255,0.1);
 }
 
 .thermo-features {
